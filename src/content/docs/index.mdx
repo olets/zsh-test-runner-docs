@@ -1,36 +1,25 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash
-hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-      variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+title: zsh-test-runner (ztr)
+description: Straight-forward tests and coverage reports for zsh and —under zsh's emulation— csh, ksh, and sh
+tableOfContents: false
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/olets/zsh-test-runner)
 
-## Next steps
+![splash card: the text '% ztr' as green neon lettering](../../assets/zsh-test-runner.jpg)
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+> Straight-forward tests and coverage reports for zsh and —under zsh's emulation— csh, ksh, and sh
+
+## Features
+
+-   test [zsh](https://www.zsh.org/) and, to a degree, [csh](https://en.wikipedia.org/wiki/C_shell), [ksh](http://kornshell.com/), and [sh](https://en.wikipedia.org/wiki/Bourne_shell) thanks to zsh's [`emulate`](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html) builtin
+-   short and gentle learning curve
+-   run one or more tests on the command line (see [`test`](#test---quiet---q-arg-name-notes))
+-   run one or more tests saved in a test suite file (see [Running test suites](#running-test-suites))
+-   skip tests (see [`skip`](#skip---quiet---q-arg-name-notes))
+-   optionally give tests descriptive names (see [`skip`](#skip---quiet---q-arg-name-notes), [`test`](#test---quiet---q-arg-name-notes))
+-   optionally provide notes to tests, for example to list dependencies in the logged output (see [`skip`](#skip---quiet---q-arg-name-notes), [`test`](#test---quiet---q-arg-name-notes))
+-   access cumulative failure, pass, and skip counts as shell variables
+-   print coverage summaries with total, failure, pass, and skip counts, and failure and pass rates (see [`summary`](#summary)).
+
+What it does not feature: its own human language-like declarative test syntax. There's no "describe", "expect", etc. Downside is the tests don't read like a story. Upside is —because the shell already has rich support for tests— there is nothing to learn, there are no artificial limits on what can be tested, the cost to migrating to zsh-test-runner (or from it, if you must) is very low, and there is no risk that assertions were incorrectly implemented. Just write your `[[ ]]`s, your `(( ))`s, even your `test`s or `[ ]`s.

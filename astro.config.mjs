@@ -5,21 +5,42 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
-      title: 'My Docs',
+      title: 'zsh-test-runner',
       social: {
-        github: 'https://github.com/withastro/starlight',
+        github: 'https://github.com/olets/zsh-test-runner',
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
       },
       sidebar: [
         {
-          label: 'Guides',
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', link: '/guides/example/' },
-          ],
+          label: 'Introduction',
+          link: '/',
         },
         {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
+          label: 'Installation',
+          link: '/installation',
+        },
+        {
+          label: 'Usage',
+          link: '/usage',
+        },
+        {
+          label: 'Running Test Suites',
+          link: '/running-test-suites',
+        },
+        {
+          label: 'Evolution',
+          autogenerate: { directory: 'evolution' },
+        },
+        {
+          label: 'Contributing',
+          link: '/contributing',
+        },
+        {
+          label: 'License',
+          link: '/license',
         },
       ],
     }),
