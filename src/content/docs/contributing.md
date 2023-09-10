@@ -9,5 +9,5 @@ Both zsh-test-runner and its documentation are released with a Contributor Code 
 
 To learn more about contributing to zsh-test-runner, visit https://github.com/olets/zsh-test-runner.
 
-To learn more about contributing to zsh-test-runner's documentation, visit https://github.com/olets/zsh-test-docs.
+To learn more about contributing to zsh-test-runner's documentation, visit https://github.com/olets/zsh-test-runner-docs.
 

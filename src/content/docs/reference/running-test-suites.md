@@ -127,4 +127,4 @@ To write a log to a file simply redirect the zsh-test-runner output. To prevent 
 
 ### Examples
 
-[`zsh-abbr`](https://github.com/olets/zsh-abbr) uses zsh-test-runner for its test suite. For a real world example of `ztr` use, check out [`zsh-abbr/tests/abbr.ztr`](https://github.com/olets/zsh-abbr/blob/main/tests/abbr.ztr).
+[`zsh-abbr`](https://github.com/olets/zsh-abbr) uses zsh-test-runner for its test suite. For a real world example of `ztr` use, check out [its test suite](https://github.com/olets/zsh-abbr/tree/main/tests).

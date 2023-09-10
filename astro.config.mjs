@@ -27,8 +27,25 @@ export default defineConfig({
           link: '/usage',
         },
         {
-          label: 'Running Test Suites',
-          link: '/running-test-suites',
+          label: 'Reference',
+          items: [
+            {
+              label: 'Commands',
+              link: '/reference/commands',
+            },
+            {
+              label: 'Configuration',
+              link: '/reference/configuration',
+            },
+            {
+              label: 'Exported Variables',
+              link: '/reference/exported-variables',
+            },
+            {
+              label: 'Running Test Suites',
+              link: '/reference/running-test-suites',
+            },
+          ],
         },
         {
           label: 'Evolution',
