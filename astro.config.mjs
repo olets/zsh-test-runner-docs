@@ -57,12 +57,12 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Evolution',
-          autogenerate: { directory: 'evolution' },
-        },
-        {
           label: 'Contributing',
           link: '/contributing',
+        },
+        {
+          label: 'Changelog',
+          link: '/changelog',
         },
         {
           label: 'License',
