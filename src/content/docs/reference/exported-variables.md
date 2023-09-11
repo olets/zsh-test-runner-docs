@@ -33,10 +33,9 @@ Use `ztr clear` to zero out results:
 
 `ZTR_RESULTS[failed]` is a convenient way to check for 100% pass rate:
 
-```
+```shell
 % (( ZTR_RESULTS[failed] )) || echo all tests pass
 ```
-
 
 ## Other
 
