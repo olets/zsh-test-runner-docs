@@ -43,10 +43,10 @@ The `ztr test` expression argument is evaluated.
 
 ```shell
 % x=2
-% ztr test 'x=1' # `x` is now equal to 1
+% ztr test 'x=1'
 PASS x=1
 % echo $x
-1
+1 # side effect
 ```
 
 That may cause unwanted side effects.
