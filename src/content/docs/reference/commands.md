@@ -4,6 +4,10 @@ title: Commands
 
 ## `clear`
 
+```shell
+ztr clear
+```
+
 Clear results.
 
 ```shell
@@ -19,7 +23,19 @@ FAIL false
 0 passed
 ```
 
-## `skip [(--quiet | -q)] <arg> [<name> [<notes>]]`
+## `help`
+
+```shell
+ztr ( --help | -h | help)
+```
+
+Show the manpage.
+
+## `skip`
+
+```shell
+ztr skip [(--quiet | -q)] <arg> [<name> [<notes>]]
+```
 
 Skip `<arg>`. Pretty-print result and notes unless "quiet".
 
@@ -28,9 +44,23 @@ Skip `<arg>`. Pretty-print result and notes unless "quiet".
 SKIP my_test
 ```
 
-See [`test` command](#test) for details about `--quiet`, `<name>`, and `<notes>`.
+### Quieting skips
+
+See [`test` command](#test).
+
+### Named skips
+
+See [`test` command](#test).
+
+### Skip notes
+
+See [`test` command](#test)
 
 ## `summary`
+
+```shell
+ztr summary
+```
 
 Pretty-print summary of results.
 
@@ -46,7 +76,11 @@ FAIL false
 1 (50%) passed
 ```
 
-## `test [(--quiet | -q)] [--emulate <shell>] [--quiet-emulate] <arg> [<name> [<notes>]]`
+## `test`
+
+```shell
+ztr test [(--quiet | -q)] [--emulate <shell>] [--quiet-emulate] <arg> [<name> [<notes>]]
+```
 
 Test `<arg>`. Pretty-print result and notes unless "quiet".
 
@@ -106,7 +140,11 @@ FAIL failing exit code
 1
 ```
 
-### `(--quiet | -q)`
+### Quieting tests
+
+```shell
+ztr test (--quiet | -q)
+```
 
 Optionally silence output.
 
@@ -118,7 +156,11 @@ PASS true
 PASS true
 ```
 
-### `--emulate <shell>`
+### Testing with shell emulation
+
+```shell
+ztr test --emulate <shell>
+```
 
 Use one of zsh's emulation modes (see "`emulate`" in [_The Z Shell Manual_, chapter 17 "Shell Builtin Commands"](http://zsh.sourceforge.net/Doc/Release/Shell-Builtin-Commands.html#Shell-Builtin-Commands)).
 
@@ -142,7 +184,11 @@ PASS [[ $(emulate) == sh ]]
 
 If you always emulate a different shell, consider setting `ZTR_EMULATION_MODE` instead of always passing the `--emulate` option.
 
-## `--quiet-emulate`
+#### Quieting shell emulation
+
+```shell
+ztr test --quiet-emuluate
+```
 
 Optionally do not warn when a non-zsh shell is emulated.
 
@@ -151,7 +197,11 @@ Optionally do not warn when a non-zsh shell is emulated.
 FAIL [[ $(emulate) == zsh ]]
 ```
 
-### `<name>`
+### Named tests
+
+```shell
+ztr test <arg> <name>
+```
 
 Optionally pass a name as a second parameter.
 
@@ -160,7 +210,11 @@ Optionally pass a name as a second parameter.
 PASS <name> appears instead of <arg>
 ```
 
-### `<notes>`
+### Test notes
+
+```shell
+ztr test <arg> <name> <notes>
+```
 
 Optionally pass notes as a third parameter. For example, noting dependencies can help with troubleshooting. In the output notes are indented.
 
@@ -186,10 +240,10 @@ FAIL my_test_30
 # Ok let's see if fixing my_test_10 fixes my_test_20 and my_test_30
 ```
 
-## `( --help | -h | help)`
+## `version`
 
-Show the manpage.
-
-## `( --version | -v | version )`
+```shell
+ztr ( --version | -v | version )
+```
 
 Print the command name and current version.

@@ -24,7 +24,20 @@ export default defineConfig({
         },
         {
           label: 'Usage',
-          link: '/usage',
+          items: [
+            {
+              label: 'Basics',
+              link: '/usage/basics',
+            },
+            {
+              label: 'Running Test Suites',
+              link: '/usage/test-suites',
+            },
+            {
+              label: 'Logging results to a file',
+              link: '/usage/logging',
+            },
+          ],
         },
         {
           label: 'Reference',
@@ -40,10 +53,6 @@ export default defineConfig({
             {
               label: 'Exported Variables',
               link: '/reference/exported-variables',
-            },
-            {
-              label: 'Running Test Suites',
-              link: '/reference/running-test-suites',
             },
           ],
         },
