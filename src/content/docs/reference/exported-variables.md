@@ -7,9 +7,9 @@ head:
 
 ## Results
 
-| Variable      | Type              | Default                                 | Use                 |
-| ------------- | ----------------- | --------------------------------------- | ------------------- |
-| `ZTR_RESULTS` | associative array | `( [failed]=0 [passed]=0 [skipped]=0 )` | The running results |
+Variable | Type | Default | Use
+---|---|---|---
+`ZTR_RESULTS` | associative array | `( [failed]=0 [passed]=0 [skipped]=0 )` | The running results
 
 Note that "tests" in the above are not necessarily unique:
 
