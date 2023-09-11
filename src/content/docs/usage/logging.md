@@ -6,7 +6,7 @@ head:
     content: "Logging :: zsh-test-runner"
 ---
 
-To write a log to a file, redirect the zsh-test-runner output. To prevent ANSI codes from cluttering the log, disable `ztr`'s color support (see [configuration variables](#configuration)).
+To write a coverage report to a file, redirect the zsh-test-runner output. To prevent ANSI codes from cluttering the log, disable `ztr`'s color support (see [configuration variables](#configuration)).
 
 If you are not already disabling colored output, do so for the context of the test suite and redirect the output:
 
