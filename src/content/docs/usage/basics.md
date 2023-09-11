@@ -53,4 +53,4 @@ That may cause unwanted side effects.
 
 Consider saving any context you'll be manipulating, and restoring the saved values after testing.
 
-Or [run tests in a subshell](/reference/running-test-suites#running-the-test-suite-in-a-subshell).
+Or [run tests in a subshell](/usage/test-suites/#running-the-test-suite-in-a-subshell).
