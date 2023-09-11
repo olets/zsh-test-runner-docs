@@ -1,6 +1,9 @@
 ---
 title: Contributing
 tableOfContents: false
+head:
+  - tag: title
+    content: "Contributing :: zsh-test-runner"
 ---
 
 Thanks for your interest. Contributions are welcome!

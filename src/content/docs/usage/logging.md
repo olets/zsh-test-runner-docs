@@ -1,6 +1,9 @@
 ---
 title: Logging results to a file
 tableOfContents: false
+head:
+  - tag: title
+    content: "Logging :: zsh-test-runner"
 ---
 
 To write a log to a file, redirect the zsh-test-runner output. To prevent ANSI codes from cluttering the log, disable `ztr`'s color support (see [configuration variables](#configuration)).

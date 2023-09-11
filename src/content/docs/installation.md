@@ -1,5 +1,8 @@
 ---
 title: Installation
+head:
+  - tag: title
+    content: "Installation :: zsh-test-runner"
 ---
 
 ## Plugin (recommended)

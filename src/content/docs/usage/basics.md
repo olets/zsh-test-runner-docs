@@ -1,5 +1,8 @@
 ---
 title: Usage basics
+head:
+  - tag: title
+    content: "Basics :: zsh-test-runner"
 ---
 
 The three essential zsh-test-runner commands are `ztr test`, `ztr summary`, and `ztr clear`.

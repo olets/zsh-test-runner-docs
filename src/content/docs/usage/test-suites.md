@@ -1,5 +1,8 @@
 ---
 title: Running test suites
+head:
+  - tag: title
+    content: "Test suites :: zsh-test-runner"
 ---
 
 You can run a test suite from a file. The following examples suppose the file is in the current working directory; adjust the path to fit your situation.

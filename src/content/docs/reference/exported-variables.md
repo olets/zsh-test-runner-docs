@@ -1,5 +1,8 @@
 ---
 title: Exported Variables
+head:
+  - tag: title
+    content: "Exported Variables :: zsh-test-runner"
 ---
 
 ## Results

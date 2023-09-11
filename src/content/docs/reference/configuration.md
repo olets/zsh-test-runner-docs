@@ -1,6 +1,9 @@
 ---
 title: Configuration
 tableOfContents: false
+head:
+  - tag: title
+    content: "Configuration :: zsh-test-runner"
 ---
 
 Variable | Type | Default | Use

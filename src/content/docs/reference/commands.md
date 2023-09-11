@@ -1,5 +1,8 @@
 ---
 title: Commands
+head:
+  - tag: title
+    content: "Commands :: zsh-test-runner"
 ---
 
 ## `clear`
