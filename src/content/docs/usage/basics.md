@@ -23,7 +23,9 @@ The three essential zsh-test-runner commands are `ztr test`, `ztr summary`, and 
     % ztr test '[[ $x == 1 ]]'
     FAIL [[ $x == 1 ]]
     ```
-    > ⚠️ Heads up: _the tested is expression is evaluated_. This can lead to side effects. Read on for details.
+    :::caution
+    The tested is expression is evaluated in the current shell. This can lead to side effects. See [Things to know](#things-to-know), below, for details.
+    :::
 1. Print the results
     ```shell
     % ztr summary

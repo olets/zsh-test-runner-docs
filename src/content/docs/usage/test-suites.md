@@ -7,7 +7,9 @@ head:
 
 You can run a test suite from a file. The following examples suppose the file is in the current working directory; adjust the path to fit your situation.
 
-> ℹ️ Tip: Most test suites should start with `ztr clear`.
+:::tip
+Most test suites should start with `ztr clear`.
+:::
 
 ## Real world example
 
@@ -17,14 +19,16 @@ You can run a test suite from a file. The following examples suppose the file is
 
 Either source your test suite or run it in a subshell
 
+:::note
+The following example uses `ztr test`'s [`name`](reference/commands/#named-tests) and [`notes`](/reference/commands/#test-notes) options.
+:::
+
 ### Sourcing the test suite
 
 In this method
 
 - the `ztr summary` results _are_ available in the parent shell
 - any side effects of your tests _are not_ sandboxed
-
-The following example uses `ztr test`'s [`name`](reference/commands/#named-tests) and [`notes`](/reference/commands/#test-notes) options.
 
 ```shell
 % cat ./suite.ztr.zsh
@@ -71,7 +75,9 @@ In this method
 - the `ztr summary` results _are not_ available in the parent shell
 - any side effects of your tests _are_ sandboxed
 
-> When running zsh-test-runner in a subshell, explicitly source `ztr.zsh` in your test suite. zsh-test-runner provides the variable `ZTR_PATH` to make this easy
+:::caution
+By default, the subshell does not automatically have access to zsh-test-runner. You will likely have to pass the zsh-test-runner path to the subshell, and source it in your test suite. zsh-test-runner provides the variable `ZTR_PATH` to make this easy
+:::
 
 ```shell
 % cat ./suite.ztr.zsh
