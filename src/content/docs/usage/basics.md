@@ -37,7 +37,7 @@ The three essential zsh-test-runner commands are `ztr test`, `ztr summary`, and 
 
 ## Typical usage
 
-zsh-test-runner tests are typically run as part of a test suite, with the `ztr` commands living in a `<name>.ztr.zsh` file. For more on that, see [Running Test Suites](/usage/running-test-suites).
+zsh-test-runner tests are typically run as part of a test suite, with the `ztr` commands living in a `<name>.ztr.zsh` file. For more on that, see [Running Test Suites](/usage/test-suites).
 
 ## Things to know
 
