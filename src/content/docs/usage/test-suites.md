@@ -75,7 +75,7 @@ In this method
 
 ```shell
 % cat ./suite.ztr.zsh
-# run with `ztr_path=$ZTR_PATH zsh <path to this file>`
+# run with `ztr_path=$ZTR_PATH zsh <path to this file>` && abbr load
 . $ztr_path
 
 # from here on is the same as the "Sourcing the test suite" example
