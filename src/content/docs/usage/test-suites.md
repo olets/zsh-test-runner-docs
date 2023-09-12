@@ -13,7 +13,7 @@ Most test suites should start with `ztr clear`.
 
 ## Real world example
 
-[`zsh-abbr`](https://github.com/olets/zsh-abbr) uses zsh-test-runner for its test suite. Check out [its test suite](https://github.com/olets/zsh-abbr/tree/main/tests) for a real world example of one way of writing zsh-test-runner test suites.
+[`zsh-abbr`](https://github.com/olets/zsh-abbr) uses zsh-test-runner. Check out [its test suite](https://github.com/olets/zsh-abbr/tree/main/tests) for a real world example of one way of writing zsh-test-runner test suites.
 
 ## Run your test suite
 
