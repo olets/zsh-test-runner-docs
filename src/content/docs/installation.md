@@ -23,7 +23,7 @@ exec zsh
 
 zsh-test-runner is available on Homebrew. Run
 
-```
+```shell
 brew install olets/tap/zsh-test-runner
 ```
 
