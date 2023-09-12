@@ -75,7 +75,7 @@ In this method
 
 ```shell
 % cat ./suite.ztr.zsh
-# run with `ztr_path=$ZTR_PATH zsh <path to this file>` && abbr load
+# run with `ztr_path=$ZTR_PATH zsh <path to this file>`
 . $ztr_path
 
 # from here on is the same as the "Sourcing the test suite" example
@@ -94,7 +94,7 @@ ztr summary
 To run the suite in a subshell pass the file to `zsh`, passing in the zsh-test-runner path as context, and then reload your user abbreviations:
 
 ```shell
-% ztr_path=$ZTR_PATH zsh ./suite.ztr.zsh && abbr load
+% ztr_path=$ZTR_PATH zsh ./suite.ztr.zsh
 PASS my first test
 FAIL my second test
 FAIL my third test

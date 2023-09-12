@@ -16,7 +16,7 @@ If you are not already disabling colored output, do so for the context of the te
 
 # or run the tests in a subshell
 # see "Running Test Suites" for how to use $ZSH_PATH
-% NO_COLOR= ztr_path=$ZTR_PATH zsh ./suite.ztr.zsh > ./suite.ztr.log && abbr load
+% NO_COLOR= ztr_path=$ZTR_PATH zsh ./suite.ztr.zsh > ./suite.ztr.log
 ```
 
 Otherwise —if you are already disabling colored output— run as usual but redirect output:
@@ -27,5 +27,5 @@ Otherwise —if you are already disabling colored output— run as usual but red
 
 # or run the tests in a subshell
 # see "Running Test Suites" for how to use $ZSH_PATH
-% ztr_path=$ZTR_PATH zsh ./suite.ztr.zsh > ./suite.ztr.log && abbr load
+% ztr_path=$ZTR_PATH zsh ./suite.ztr.zsh > ./suite.ztr.log
 ```
