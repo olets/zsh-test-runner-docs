@@ -61,6 +61,14 @@ export default defineConfig({
             content: "#ffffff",
           },
         },
+        {
+          tag: 'script',
+          attrs: {
+            src: 'https://cdn.usefathom.com/script.js',
+            'data-site': 'JJDJCMHG',
+            'defer': true,
+          },
+        }
       ],
       title: 'zsh-test-runner',
       social: {
