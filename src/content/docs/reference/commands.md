@@ -183,9 +183,10 @@ FAIL [[ $(emulate) == zsh ]]
     emulation mode: sh
 % ztr test --emulate sh '[[ $(emulate) == sh ]]'
 PASS [[ $(emulate) == sh ]]
+    emulation mode: sh
 ```
 
-If you always emulate a different shell, consider setting `ZTR_EMULATION_MODE` instead of always passing the `--emulate` option.
+If you regularly emulate a different shell, consider setting `ZTR_EMULATION_MODE` instead of always passing the `--emulate` option (see [Configuration](/reference/configuration/)).
 
 #### Quieting shell emulation
 
