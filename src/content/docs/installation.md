@@ -31,7 +31,7 @@ and follow the post-install instructions logged to the terminal.
 
 ## Manual
 
-Clone this repo and add `source path/to/ztr.zsh` to your `.zshrc` (replace `path/to/` with the correct path). Then restart zsh:
+Clone the [zsh-test-runner repo](https://github.com/olets/zsh-test-runner) and add `source path/to/ztr.zsh` to your `.zshrc` (replace `path/to/` with the correct path). Then restart zsh:
 
 ```shell
 exec zsh
