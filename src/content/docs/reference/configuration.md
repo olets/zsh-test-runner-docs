@@ -18,3 +18,7 @@ Variable | Type | Default | Use
 `ZTR_EMULATION_MODE` | string | `zsh` | The emulation mode to use
 `ZTR_QUIET` | integer | `0` | If non-zero, use quiet mode without passing `--quiet`
 `ZTR_QUIET_EMULATION_MODE` | integer | `0` | If non-zero, use quiet emulation mode without passing `--quiet-emulate`
+`ZTR_SETUP_ARGS` | string | undeclared | Passed to `ZTR_SETUP_FN`
+`ZTR_SETUP_FN` | function | undeclared | Run by `ztr test` before the test expression is evaluated
+`ZTR_TEARDOWN_ARGS` | string | undeclared | Passed to `ZTR_TEARDOWN_FN`
+`ZTR_TEARDOWN_FN` | function | undeclared | Run by `ztr test` after the test expression is evaluated

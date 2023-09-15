@@ -148,6 +148,13 @@ FAIL failing exit code
 1
 ```
 
+### Setup and teardown
+
+If `ZTR_SETUP_FN` is defined, `ZTR_SETUP_FN $ZTR_SETUP_ARGS` runs before `<arg>` is evaluated.
+
+If `ZTR_TEARDOWN_FN` is defined, `ZTR_TEARDOWN_FN $ZTR_TEARDOWN_ARGS` runs before `<arg>` is evaluated.
+
+
 ### Quieting tests
 
 ```shell
