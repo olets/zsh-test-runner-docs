@@ -6,9 +6,10 @@ head:
     content: "Exported Variables :: zsh-test-runner"
 ---
 
-:::tip
-A new major version of zsh-test-runner is in the works. Learn about it now at  
-https://next.zsh-test-runner.olets.dev
+:::caution
+These are the docs for the unreleased `next` version of zsh-test-runner.
+
+For the latest release's documentation see <a href="https://zsh-test-runner.olets.dev">https://zsh-test-runner.olets.dev</a>.
 :::
 
 Variable | Type | Default | Use

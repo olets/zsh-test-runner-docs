@@ -6,9 +6,10 @@ head:
     content: "Logging :: zsh-test-runner"
 ---
 
-:::tip
-A new major version of zsh-test-runner is in the works. Learn about it now at  
-https://next.zsh-test-runner.olets.dev
+:::caution
+These are the docs for the unreleased `next` version of zsh-test-runner.
+
+For the latest release's documentation see <a href="https://zsh-test-runner.olets.dev">https://zsh-test-runner.olets.dev</a>.
 :::
 
 To write a coverage report to a file, redirect the zsh-test-runner output. To prevent ANSI codes from cluttering the log, disable `ztr`'s color support (see [Configuration](/reference/configuration)).

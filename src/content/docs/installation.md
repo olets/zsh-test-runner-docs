@@ -5,9 +5,10 @@ head:
     content: "Installation :: zsh-test-runner"
 ---
 
-:::tip
-A new major version of zsh-test-runner is in the works. Learn about it now at  
-https://next.zsh-test-runner.olets.dev
+:::caution
+These are the docs for the unreleased `next` version of zsh-test-runner.
+
+For the current release's documentation see <https://zsh-test-runner.olets.dev>.
 :::
 
 ## Plugin (recommended)
