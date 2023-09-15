@@ -20,7 +20,7 @@ The three essential zsh-test-runner commands are `ztr test`, `ztr summary`, and 
     ```shell
     % ztr clear-summary
     ```
-1. Run some tests, using the format `ztr test '<expression to test>'`
+1. Run some tests, using the format `ztr test <expression to test>`
     ```shell
     % x=2
     % ztr test '(( x == 2 ))'
@@ -29,7 +29,7 @@ The three essential zsh-test-runner commands are `ztr test`, `ztr summary`, and 
     FAIL [[ $x == 1 ]]
     ```
     :::caution
-    The tested is expression is evaluated in the current shell. This can lead to side effects. See [Things to know](#things-to-know), below, for details.
+    The test expression is evaluated in the current shell  with `eval`. This can lead to side effects. See [Things to know](#things-to-know), below, for details.
     :::
 1. Print the results
     ```shell
@@ -57,6 +57,8 @@ PASS x=1
 ```
 
 That may cause unwanted side effects.
+
+Make careful use of quotation levels.
 
 Consider saving any context you'll be manipulating, and restoring the saved values after testing.
 

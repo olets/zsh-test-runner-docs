@@ -110,7 +110,9 @@ In practice `<arg>` will most likely be a shell test expression.
 PASS [[ 1 == 1 ]]
 ```
 
-Note that `<arg>` is passed to `eval`, so 1) don't pass something you don't want to `eval` and 2) watch out for quotation errors.
+:::caution
+`<arg>` is evaluated in the current shell, with `eval`. This can lead to unintended side effects. See [Running Test Suites](/usage/test-suites).
+:::
 
 ```shell
 % ztr test [[ 1 == 1 ]]
