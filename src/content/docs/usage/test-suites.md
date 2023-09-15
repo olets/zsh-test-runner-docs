@@ -13,7 +13,7 @@ https://next.zsh-test-runner.olets.dev
 You can run a test suite from a file. The following examples suppose the file is in the current working directory; adjust the path to fit your situation.
 
 :::tip
-Most test suites should start with `ztr clear`.
+Most test suites should start with `ztr clear-summary`.
 :::
 
 ## Real world example
@@ -39,7 +39,7 @@ In this method
 % cat ./suite.ztr.zsh
 my_test=false
 
-ztr clear
+ztr clear-summary
 ztr test true 'my first test'
 ztr test my_test 'my second test'
 ztr test 'my_test && true' 'my third test' 'depends on my second test'
@@ -92,7 +92,7 @@ By default, the subshell does not automatically have access to zsh-test-runner. 
 # from here on is the same as the "Sourcing the test suite" example
 my_test=false
 
-ztr clear
+ztr clear-summary
 ztr test true 'my first test'
 ztr test my_test 'my second test'
 ztr test 'my_test && true' 'my third test' 'depends on my second test'

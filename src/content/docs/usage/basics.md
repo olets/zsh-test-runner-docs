@@ -10,15 +10,15 @@ A new major version of zsh-test-runner is in the works. Learn about it now at
 https://next.zsh-test-runner.olets.dev
 :::
 
-The three essential zsh-test-runner commands are `ztr test`, `ztr summary`, and `ztr clear`.
+The three essential zsh-test-runner commands are `ztr test`, `ztr summary`, and `ztr clear-summary`.
 
-`ztr test` runs a test. `ztr summary` prints statistics about the `ztr test` tests run since the last `ztr clear`.
+`ztr test` runs a test. `ztr summary` prints statistics about the `ztr test` tests run since the last `ztr clear-summary`.
 
 ## Minimal usage
 
 1. Clear the summary
     ```shell
-    % ztr clear
+    % ztr clear-summary
     ```
 1. Run some tests, using the format `ztr test '<expression to test>'`
     ```shell

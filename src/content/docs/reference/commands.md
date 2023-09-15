@@ -10,10 +10,14 @@ A new major version of zsh-test-runner is in the works. Learn about it now at
 https://next.zsh-test-runner.olets.dev
 :::
 
-## `clear`
+## `clear-queue`
+
+Clear the queue.
+
+## `clear-summary`
 
 ```shell
-ztr clear
+ztr clear-summary
 ```
 
 Clear results.
@@ -21,7 +25,7 @@ Clear results.
 ```shell
 % ztr test true
 PASS true
-% ztr clear
+% ztr clear-summary
 % ztr test false
 FAIL false
 % ztr summary
