@@ -43,6 +43,36 @@ ztr ( --help | -h | help)
 
 Show the manpage.
 
+## `queue`
+
+```shell
+ztr queue [[(--quiet | -q)] <arg> [--emulate <shell>] [--quiet-emulate] [<name> [<notes>]]]
+```
+
+Without arguments: print the queued tests.
+
+With arguments: as `ztr test` but the test is queued rather than run.
+
+See also [`run-queue`](#run-queue).
+
+## `run-queue`
+
+```shell
+ztr run-queue [(--quiet | -q)]
+```
+
+Run all queued tests, and then clear the queue.
+
+`--quiet` runs all tests with [the `--quiet` flag](#quieting-tests).
+
+See also [`queue`](#queue).
+
+### Bootstrap and clean
+
+If `ZTR_BOOTSTRAP_FN` is defined, it is run before the first queued test.
+
+If `ZTR_CLEAN_FN` is defined, it is run after the last queued test.
+
 ## `skip`
 
 ```shell
