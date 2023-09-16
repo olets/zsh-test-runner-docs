@@ -50,14 +50,15 @@ You can build up a queue of tests to run all at once.
 ```shell
 % x=2
 % ztr clear-summary
-% ztr queue "'(( x == 2 ))'"
-% ztr queue "'[[ \$x == 1 ]]'"
+% ztr queue '(( x == 2 ))'
+% ztr queue '[[ $x == 1 ]]' '[[ $x == 1 ]]' 'Should fail'
 % ztr queue
 ztr test '(( x == 2 ))'
-ztr test '[[ $x == 1 ]]'
+ztr test '[[ $x == 1 ]]' '[[ $x == 1 ]]' 'Should fail'
 % ztr run-queue
 PASS (( x == 2 ))
 FAIL [[ $x == 1 ]]
+    Should fail
 % ztr summary
 2 tests total
 1 (50%) failed
