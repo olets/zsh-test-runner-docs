@@ -27,10 +27,6 @@ The following example uses `ztr test`'s [`name`](/reference/commands/#named-test
 Check out [`ztr run-queue`](/reference/commands/#run-queue) and its [bootstrap and clean](/reference/commands/#bootstrap-and-clean) features, and `ztr tests`'s [setup and teardown](/reference/commands/#setup-and-teardown) features.
 :::
 
-## Real world example
-
-[`zsh-abbr`](https://github.com/olets/zsh-abbr) uses zsh-test-runner. Check out [its test suite](https://github.com/olets/zsh-abbr/tree/main/tests) for a real world example of one way of writing zsh-test-runner test suites.
-
 ## Running a test suite in the current shell
 
 In this method

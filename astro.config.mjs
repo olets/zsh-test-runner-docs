@@ -105,6 +105,10 @@ export default defineConfig({
               label: 'Logging results to a file',
               link: '/usage/logging',
             },
+            {
+              label: 'Examples',
+              link: '/usage/examples',
+            },
           ],
         },
         {
