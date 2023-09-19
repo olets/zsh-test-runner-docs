@@ -1,6 +1,64 @@
+:root[data-theme=light],
+[data-theme=light] ::backdrop {
+  --sl-color-text-accent: #0674d5;
+  --sl-color-bg-nav: #fff;
+}
+
+.site-title {
+  color: var(--sl-color-gray-1);
+}
+
+.header .right-group a {
+  color: inherit;
+
+  &:focus-visible,
+  &:hover {
+    color: var(--sl-color-text-accent);
+    opacity: 1;
+  }
+}
+
+.right-sidebar {
+  border-left: 0;
+}
+
 .right-sidebar-panel nav ul li:first-child {
     display: none;
 }
+
+.sidebar-pane .large {
+  font-weight: inherit;
+}
+
+.sidebar {
+  [aria-current=page],
+  [aria-current=page]:focus
+  [aria-current=page]:hover {
+    font-weight: 500;
+    color: var(--sl-color-text-accent);
+    background-color: inherit;
+  }
+  
+}
+
+.sidebar .top-level > li:has([aria-current=page]) summary h2 {
+  color: var(--sl-color-text-accent);
+}
+
+#starlight__sidebar {
+  border-inline-end: 0;
+
+  .sidebar-content {
+    border-inline-end: 1px solid var(--sl-color-hairline-shade);
+  }
+}
+
+.content-panel {
+  + & {
+    border-top: 0;
+  }
+}
+
 .main-frame a[href^=http]::after {
   content: ' ↗︎';
 }
