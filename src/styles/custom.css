@@ -1,3 +1,6 @@
+.right-sidebar-panel nav ul li:first-child {
+    display: none;
+}
 .main-frame a[href^=http]::after {
   content: ' ↗︎';
 }
