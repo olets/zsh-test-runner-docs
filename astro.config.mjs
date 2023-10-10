@@ -71,6 +71,12 @@ export default defineConfig({
             'data-site': 'JJDJCMHG',
             'defer': true,
           },
+        },
+        {
+          tag: 'script',
+          attrs: {
+            src: '/scripts/analytics.js',
+          },
         }
       ],
       title: 'zsh-test-runner',
