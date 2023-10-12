@@ -9,7 +9,7 @@ head:
 :::caution
 These are the docs for the unreleased `next` version of zsh-test-runner.
 
-For the latest release's documentation see <a href="https://zsh-test-runner.olets.dev">https://zsh-test-runner.olets.dev</a>.
+For the latest release's documentation see https://zsh-test-runner.olets.dev.
 :::
 
 Variable | Type | Default | Use

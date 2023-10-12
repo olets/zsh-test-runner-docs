@@ -8,7 +8,7 @@ head:
 :::caution
 These are the docs for the unreleased `next` version of zsh-test-runner.
 
-For the latest release's documentation see <a href="https://zsh-test-runner.olets.dev">https://zsh-test-runner.olets.dev</a>.
+For the latest release's documentation see https://zsh-test-runner.olets.dev.
 :::
 
 The three essential zsh-test-runner commands are [`ztr test`](/reference/commands/#test), [`ztr summary`](/reference/commands/#summary), and [`ztr clear-summary`](/reference/commands/#clear-summary).
