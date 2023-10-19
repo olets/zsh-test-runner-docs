@@ -13,6 +13,10 @@ For the current release's documentation see <https://zsh-test-runner.olets.dev>.
 
 ## `clear-queue`
 
+```shell
+ztr clear-queue
+```
+
 Clear the queue.
 
 ## `clear-summary`
