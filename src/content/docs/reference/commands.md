@@ -51,7 +51,7 @@ Show the manpage.
 ## `queue`
 
 ```shell
-ztr queue [[(--quiet | -q)] <arg> [--emulate <shell>] [--quiet-emulate] [<name> [<notes>]]]
+ztr queue [[(--quiet | -q)] [--emulate <shell>] [--quiet-emulate] <arg> [<name> [<notes>]]]
 ```
 
 Without arguments: print the queued tests.
