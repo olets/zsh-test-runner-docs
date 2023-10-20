@@ -6,6 +6,11 @@ head:
     content: "Exported Variables :: zsh-test-runner"
 ---
 
+:::tip
+A new major version of zsh-test-runner is in the works. Learn about it now at  
+https://next.zsh-test-runner.olets.dev
+:::
+
 Variable | Type | Default | Use
 ---|---|---|---
 `ZTR_PATH` | string | Path to zsh-test-runner | Useful for passing to subshells. See [Logging results to a file](/usage/logging)

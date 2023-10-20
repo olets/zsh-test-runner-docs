@@ -5,6 +5,11 @@ head:
     content: "Commands :: zsh-test-runner"
 ---
 
+:::tip
+A new major version of zsh-test-runner is in the works. Learn about it now at  
+https://next.zsh-test-runner.olets.dev
+:::
+
 ## `clear`
 
 ```shell
