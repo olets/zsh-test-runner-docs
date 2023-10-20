@@ -62,3 +62,28 @@
 .main-frame a[href^=http]::after {
   content: ' ↗︎';
 }
+
+.link-title, /* name of prev/next page in footer nav */
+.sidebar-pane details summary,
+.page a:not([aria-current]) {
+  transition: color 100ms;
+}
+
+.sidebar-pane details summary:focus-visible *,
+.sidebar-pane details summary:hover *,
+.page a:not([aria-current]):focus-visible,
+.page a:not([aria-current]):hover,
+.page a:not([aria-current]):focus-visible .link-title,
+.page a:not([aria-current]):hover .link-title {
+  color: var(--sl-color-text-accent);
+  opacity: 1;
+}
+
+.content a {
+  transition: text-decoration-color 100ms;
+}
+
+.content a:focus-visible,
+.content a:hover {
+  text-decoration-color: transparent;
+}
