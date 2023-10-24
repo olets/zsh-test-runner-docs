@@ -1,5 +1,5 @@
 ---
-title: Running test suites
+title: Test suites
 head:
   - tag: title
     content: "Test suites :: zsh-test-runner"

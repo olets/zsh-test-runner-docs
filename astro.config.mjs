@@ -100,11 +100,11 @@ export default defineConfig({
           label: 'Usage',
           items: [
             {
-              label: 'Basics',
-              link: '/usage/basics',
+              label: 'Individual Tests',
+              link: '/usage/tests',
             },
             {
-              label: 'Running Test Suites',
+              label: 'Test Suites',
               link: '/usage/test-suites',
             },
             {

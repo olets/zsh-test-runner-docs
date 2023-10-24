@@ -1,8 +1,8 @@
 ---
-title: Usage basics
+title: Individual tests
 head:
   - tag: title
-    content: "Basics :: zsh-test-runner"
+    content: "Running tests :: zsh-test-runner"
 ---
 
 :::caution
