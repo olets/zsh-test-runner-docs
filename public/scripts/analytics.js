@@ -4,19 +4,19 @@ function addTrackingToNav() {
       els: Array.from(
         document.querySelectorAll('.sidebar a[href="https://github.com/olets/zsh-test-runner/blob/main/CHANGELOG.md"]')
       ),
-      fathomEventId: "1IM3F81U",
+      fathomEventId: "Click Sidebar Changelog",
     },
     {
       els: Array.from(
         document.querySelectorAll('.sidebar a[href="https://github.com/olets/zsh-test-runner/blob/main/LICENSE"]')
       ),
-      fathomEventId: "FLLTLBBH",
+      fathomEventId: "Click Sidebar License",
     },
     {
       els: Array.from(
         document.querySelectorAll('.header a[href="https://github.com/olets/zsh-test-runner"]')
       ),
-      fathomEventId: "UDQTYUYT",
+      fathomEventId: "Click Sidebar Repo",
     },
   ];
 
@@ -38,12 +38,12 @@ function trackLinks() {
     }
 
     link.addEventListener("click", () => {
-      window.fathom.trackGoal(fathomEventId, 0);
+      window.fathom.trackEvent(fathomEventId);
     });
   }
 }
 
-if (window?.fathom?.trackGoal) {
+if (window?.fathom?.trackEvent) {
   addTrackingToNav();
   trackLinks();
 }
