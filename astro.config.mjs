@@ -112,6 +112,10 @@ export default defineConfig({
               link: '/usage/test-suites',
             },
             {
+              label: 'Setup & Teardown',
+              link: '/usage/setup-teardown',
+            },
+            {
               label: 'Logging results to a file',
               link: '/usage/logging',
             },
