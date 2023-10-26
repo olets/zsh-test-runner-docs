@@ -127,3 +127,8 @@ pre.astro-code .line.highlighted-line {
 :root[data-theme=dark] pre.astro-code .line.highlighted-line {
   background: var(--astro-code-color-background-dark);
 }
+
+/* Hide secondary TOC sidebar when it has no links other than to the top */
+.right-sidebar-container:not(:has(a:not([href="#_top"]))) {
+  display: none;
+}
