@@ -1,3 +1,8 @@
+:root {  
+  --astro-code-color-background-dark: color-mix(in srgb, var(--astro-code-color-background), black 60%);
+  --astro-code-color-background-light: color-mix(in srgb, var(--astro-code-color-background), white 60%);
+}
+
 :root[data-theme=light],
 [data-theme=light] ::backdrop {
   --sl-color-text-accent: #0674d5;
@@ -100,4 +105,25 @@
 .content a.heading-link:hover {
   color: var(--sl-color-text-accent);
   text-decoration-color: currentColor;
+}
+
+/* Highlight lines in code blocks */
+pre.astro-code {
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 0;
+}
+
+pre.astro-code code .line {
+  padding: 6px 1rem;
+  line-height: 1;
+  display: block;
+}
+
+pre.astro-code .line.highlighted-line {
+  background: var(--astro-code-color-background-light);
+}
+
+:root[data-theme=dark] pre.astro-code .line.highlighted-line {
+  background: var(--astro-code-color-background-dark);
 }
