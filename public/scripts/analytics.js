@@ -2,13 +2,13 @@ function addTrackingToNav() {
   const links = [
     {
       els: Array.from(
-        document.querySelectorAll('.sidebar a[href="/changelog/"]')
+        document.querySelectorAll('.sidebar a[href="https://github.com/olets/zsh-test-runner/blob/main/CHANGELOG.md"]')
       ),
       fathomEventId: "1IM3F81U",
     },
     {
       els: Array.from(
-        document.querySelectorAll('.sidebar a[href="/license/"]')
+        document.querySelectorAll('.sidebar a[href="https://github.com/olets/zsh-test-runner/blob/main/LICENSE"]')
       ),
       fathomEventId: "FLLTLBBH",
     },
