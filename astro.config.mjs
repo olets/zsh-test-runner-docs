@@ -104,6 +104,10 @@ export default defineConfig({
               link: '/usage/tests',
             },
             {
+              label: 'Queue',
+              link: '/usage/queue',
+            },
+            {
               label: 'Test Suites',
               link: '/usage/test-suites',
             },

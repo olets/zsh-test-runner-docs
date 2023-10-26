@@ -43,29 +43,6 @@ You can also build up a [queue of tests](/reference/commands/#queue), and specif
     3 (75%) passed
     ```
 
-## Queue
-
-You can build up a queue of tests to run all at once.
-
-```shell
-% x=2
-% ztr clear-summary
-% ztr queue '(( x == 2 ))'
-% ztr queue '[[ $x == 1 ]]' '[[ $x == 1 ]]' 'Should fail'
-% ztr queue
-ztr test '(( x == 2 ))'
-ztr test '[[ $x == 1 ]]' '[[ $x == 1 ]]' 'Should fail'
-% ztr run-queue
-PASS (( x == 2 ))
-FAIL [[ $x == 1 ]]
-    Should fail
-% ztr summary
-2 tests total
-1 (50%) failed
-0 were skipped
-1 (50%) passed
-```
-
 ## Typical usage
 
 zsh-test-runner tests are typically run as part of a test suite, with the `ztr` commands living in a `<name>.ztr.zsh` file. For more on that, see [Running Test Suites](/usage/test-suites).
