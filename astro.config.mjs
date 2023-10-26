@@ -77,7 +77,13 @@ export default defineConfig({
           attrs: {
             src: '/scripts/analytics.js',
           },
-        }
+        },
+        {
+          tag: 'script',
+          attrs: {
+            src: '/scripts/link-headings.js',
+          },
+        },
       ],
       title: 'zsh-test-runner',
       social: {
