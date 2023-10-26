@@ -2,6 +2,12 @@ function addTrackingToNav() {
   const links = [
     {
       els: Array.from(
+        document.querySelectorAll('.sidebar a[href="https://github.com/olets/zsh-test-runner/blob/main/CONTRIBUTING.md"]')
+      ),
+      fathomEventId: "Click Sidebar Contributing",
+    },
+    {
+      els: Array.from(
         document.querySelectorAll('.sidebar a[href="https://github.com/olets/zsh-test-runner/blob/main/CHANGELOG.md"]')
       ),
       fathomEventId: "Click Sidebar Changelog",
