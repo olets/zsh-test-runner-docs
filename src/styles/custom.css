@@ -87,3 +87,17 @@
 .content a:hover {
   text-decoration-color: transparent;
 }
+
+/* Linked headings */
+.content a.heading-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color 200ms, text-decoration-color 100ms;
+}
+
+.content a.heading-link:focus-visible,
+.content a.heading-link:hover {
+  color: var(--sl-color-text-accent);
+  text-decoration-color: currentColor;
+}
