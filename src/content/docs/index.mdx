@@ -7,36 +7,28 @@ head:
     content: "zsh-test-runner"
 ---
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/olets/zsh-test-runner)
+{/* ![GitHub release (latest by date)](https://img.shields.io/github/v/release/olets/zsh-test-runner) */}
 
 <div style="border: 1px solid #fff">![splash card: the text '% ztr' as green neon lettering](../../assets/zsh-test-runner.jpg)</div>
-
-:::tip
-A new major version of zsh-test-runner is in the works. Learn about it now at  
-https://next.zsh-test-runner.olets.dev
-:::
 
 > Straight-forward tests and coverage reports for zsh and —under zsh's emulation— csh, ksh, and sh
 
 **What it features**: everything you need for testing zsh scripts.
 
 -   test [zsh](https://www.zsh.org/) and, to a degree, [csh](https://en.wikipedia.org/wiki/C_shell), [ksh](http://kornshell.com/), and [sh](https://en.wikipedia.org/wiki/Bourne_shell) thanks to zsh's [`emulate`](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html) builtin
+    -   optionally give tests descriptive names and additional notes
+-   run one or more tests on the command line
+-   run one or more tests saved in a test suite file
+-   optionally run a setup function before each test
+-   optionally run a teardown function after each test
+-   skip tests
+-   queue tests to run in a batch
+    -   optionally run a bootstrap function before each batch
+    -   optionally run a clean function after each batch
+-   access cumulative failure, pass, and skip counts as shell variables
+-   print coverage summaries with total count, failure count and rate, pass count and rate, and skip count
 -   short and gentle learning curve
--   run one or more tests on the command line [^1]
--   run one or more tests saved in a test suite file [^2]
--   skip tests [^3]
--   optionally give tests descriptive names [^1] [^3]
--   optionally provide notes to tests (handy for listing dependencies in the logged output) [^1] [^3]
--   access cumulative failure, pass, and skip counts as shell variables [^1]
--   print coverage summaries with total count, failure count, pass count, skip count, failure rate, and pass rate [^4]
 
 **What it does not feature**: its own human language-like declarative test syntax.
 
 There's no "describe", "expect", etc. Downside is the tests don't read like a story. Upside is —because the shell already has rich support for tests— there is nothing idiomatic to learn, there are no artificial limits on what can be tested, the cost to migrating to zsh-test-runner (or from it, if you must) is very low, and there is no risk that assertions were incorrectly implemented. Just write your `[[ ]]`s, `(( ))`s, even your `test`s and `[ ]`s.
-
-&nbsp;
-
-[^1]: [Commands > `test`](/reference/commands/#test)
-[^2]: [Running test suites](/usage/test-suites)
-[^3]: [Commands > `skip`](/reference/commands/#skip)
-[^4]: [Commands > `summary`](/reference/commands/#summary)

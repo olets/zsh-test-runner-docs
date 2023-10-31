@@ -71,7 +71,28 @@ export default defineConfig({
             'data-site': 'JJDJCMHG',
             'defer': true,
           },
-        }
+        },
+        {
+          tag: 'script',
+          attrs: {
+            src: '/scripts/analytics.js',
+            'defer': true,
+          },
+        },
+        {
+          tag: 'script',
+          attrs: {
+            src: '/scripts/link-headings.js',
+            'defer': true,
+          },
+        },
+        {
+          tag: 'script',
+          attrs: {
+            src: '/scripts/highlight-codeblock-lines.js',
+            'defer': true,
+          },
+        },
       ],
       title: 'zsh-test-runner',
       social: {
@@ -94,16 +115,28 @@ export default defineConfig({
           label: 'Usage',
           items: [
             {
-              label: 'Basics',
-              link: '/usage/basics',
+              label: 'Individual Tests',
+              link: '/usage/tests',
             },
             {
-              label: 'Running Test Suites',
+              label: 'Queue',
+              link: '/usage/queue',
+            },
+            {
+              label: 'Test Suites',
               link: '/usage/test-suites',
+            },
+            {
+              label: 'Setup & Teardown',
+              link: '/usage/setup-teardown',
             },
             {
               label: 'Logging results to a file',
               link: '/usage/logging',
+            },
+            {
+              label: 'Examples',
+              link: '/usage/examples',
             },
           ],
         },

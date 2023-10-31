@@ -5,11 +5,6 @@ head:
     content: "Installation :: zsh-test-runner"
 ---
 
-:::tip
-A new major version of zsh-test-runner is in the works. Learn about it now at  
-https://next.zsh-test-runner.olets.dev
-:::
-
 ## Plugin (recommended)
 
 Install zsh-test-runner with a zsh plugin manager. This is the recommended method because most modern plugin managers are optimized for shell load time performance and also install command-line completions for you.

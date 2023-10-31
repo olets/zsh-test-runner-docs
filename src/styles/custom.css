@@ -1,3 +1,134 @@
+:root {  
+  --astro-code-color-background-dark: color-mix(in srgb, var(--astro-code-color-background), black 60%);
+  --astro-code-color-background-light: color-mix(in srgb, var(--astro-code-color-background), white 60%);
+}
+
+:root[data-theme=light],
+[data-theme=light] ::backdrop {
+  --sl-color-text-accent: #0674d5;
+  --sl-color-bg-nav: #fff;
+}
+
+.site-title {
+  color: var(--sl-color-gray-1);
+}
+
+.header .right-group a {
+  color: inherit;
+
+  &:focus-visible,
+  &:hover {
+    color: var(--sl-color-text-accent);
+    opacity: 1;
+  }
+}
+
+.right-sidebar {
+  border-left: 0;
+}
+
+.right-sidebar-panel nav ul li:first-child {
+    display: none;
+}
+
+.sidebar-pane .large {
+  font-weight: inherit;
+}
+
+.sidebar {
+  [aria-current=page],
+  [aria-current=page]:focus
+  [aria-current=page]:hover {
+    font-weight: 500;
+    color: var(--sl-color-text-accent);
+    background-color: inherit;
+  }
+  
+}
+
+.sidebar .top-level > li:has([aria-current=page]) summary h2 {
+  color: var(--sl-color-text-accent);
+}
+
+#starlight__sidebar {
+  border-inline-end: 0;
+
+  .sidebar-content {
+    border-inline-end: 1px solid var(--sl-color-hairline-shade);
+  }
+}
+
+.content-panel {
+  + & {
+    border-top: 0;
+  }
+}
+
 .main-frame a[href^=http]::after {
   content: ' ↗︎';
+}
+
+.link-title, /* name of prev/next page in footer nav */
+.sidebar-pane details summary,
+.page a:not([aria-current]) {
+  transition: color 100ms;
+}
+
+.sidebar-pane details summary:focus-visible *,
+.sidebar-pane details summary:hover *,
+.page a:not([aria-current]):focus-visible,
+.page a:not([aria-current]):hover,
+.page a:not([aria-current]):focus-visible .link-title,
+.page a:not([aria-current]):hover .link-title {
+  color: var(--sl-color-text-accent);
+  opacity: 1;
+}
+
+.content a {
+  transition: text-decoration-color 100ms;
+}
+
+.content a:focus-visible,
+.content a:hover {
+  text-decoration-color: transparent;
+}
+
+/* Linked headings */
+.content a.heading-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color 200ms, text-decoration-color 100ms;
+}
+
+.content a.heading-link:focus-visible,
+.content a.heading-link:hover {
+  color: var(--sl-color-text-accent);
+  text-decoration-color: currentColor;
+}
+
+/* Highlight lines in code blocks */
+pre.astro-code {
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 0;
+}
+
+pre.astro-code code .line {
+  padding: 6px 1rem;
+  line-height: 1;
+  display: block;
+}
+
+pre.astro-code .line.highlighted-line {
+  background: var(--astro-code-color-background-light);
+}
+
+:root[data-theme=dark] pre.astro-code .line.highlighted-line {
+  background: var(--astro-code-color-background-dark);
+}
+
+/* Hide secondary TOC sidebar when it has no links other than to the top */
+.right-sidebar-container:not(:has(a:not([href="#_top"]))) {
+  display: none;
 }

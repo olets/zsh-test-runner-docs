@@ -5,15 +5,18 @@ head:
     content: "Commands :: zsh-test-runner"
 ---
 
-:::tip
-A new major version of zsh-test-runner is in the works. Learn about it now at  
-https://next.zsh-test-runner.olets.dev
-:::
-
-## `clear`
+## `clear-queue`
 
 ```shell
-ztr clear
+ztr clear-queue
+```
+
+Clear the queue.
+
+## `clear-summary`
+
+```shell
+ztr clear-summary
 ```
 
 Clear results.
@@ -21,7 +24,7 @@ Clear results.
 ```shell
 % ztr test true
 PASS true
-% ztr clear
+% ztr clear-summary
 % ztr test false
 FAIL false
 % ztr summary
@@ -38,6 +41,32 @@ ztr ( --help | -h | help)
 ```
 
 Show the manpage.
+
+## `queue`
+
+```shell
+ztr queue [[(--quiet | -q)] [--emulate <shell>] [--quiet-emulate] <arg> [<name> [<notes>]]]
+```
+
+Without arguments: print the queued tests.
+
+With arguments: as `ztr test` but the test is queued rather than run.
+
+## `run-queue`
+
+```shell
+ztr run-queue [(--quiet | -q)]
+```
+
+Run all queued tests, and then clear the queue.
+
+`--quiet` runs all tests with [the `--quiet` flag](#quieting-tests).
+
+### Bootstrap and clean
+
+If `ZTR_BOOTSTRAP_FN` is defined, it is run before the first queued test.
+
+If `ZTR_CLEAN_FN` is defined, it is run after the last queued test.
 
 ## `skip`
 
@@ -106,7 +135,9 @@ In practice `<arg>` will most likely be a shell test expression.
 PASS [[ 1 == 1 ]]
 ```
 
-Note that `<arg>` is passed to `eval`, so 1) don't pass something you don't want to `eval` and 2) watch out for quotation errors.
+:::caution
+`<arg>` is evaluated in the current shell, with `eval`. This can lead to unintended side effects. See [Running Test Suites](/usage/test-suites).
+:::
 
 ```shell
 % ztr test [[ 1 == 1 ]]
@@ -147,6 +178,13 @@ FAIL failing exit code
 % echo $?
 1
 ```
+
+### Setup and teardown
+
+If `ZTR_SETUP_FN` is defined, `ZTR_SETUP_FN $ZTR_SETUP_ARGS` runs before `<arg>` is evaluated.
+
+If `ZTR_TEARDOWN_FN` is defined, `ZTR_TEARDOWN_FN $ZTR_TEARDOWN_ARGS` runs after `<arg>` is evaluated.
+
 
 ### Quieting tests
 
