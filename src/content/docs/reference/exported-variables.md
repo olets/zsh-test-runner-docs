@@ -1,5 +1,6 @@
 ---
 title: Exported Variables
+next: false
 tableOfContents: false
 head:
   - tag: title

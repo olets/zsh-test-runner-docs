@@ -64,7 +64,8 @@
   }
 }
 
-.main-frame a[href^=http]::after {
+.main-frame a[href^=http]::after,
+.sidebar .top-level a[href^=http]::after {
   content: ' ↗︎';
 }
 

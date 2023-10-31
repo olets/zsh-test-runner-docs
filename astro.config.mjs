@@ -158,15 +158,15 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Contributing ↗︎',
+          label: 'Contributing',
           link: 'https://github.com/olets/zsh-test-runner/blob/main/CONTRIBUTING.md',
         },
         {
-          label: 'Changelog ↗︎',
+          label: 'Changelog',
           link: 'https://github.com/olets/zsh-test-runner/blob/main/CHANGELOG.md',
         },
         {
-          label: 'License ↗︎',
+          label: 'License',
           link: 'https://github.com/olets/zsh-test-runner/blob/main/LICENSE',
         },
       ],
