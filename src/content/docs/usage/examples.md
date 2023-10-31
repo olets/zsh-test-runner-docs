@@ -15,4 +15,4 @@ If you use zsh-test-runner in an open-source project, consider contributing a li
 
 <!-- TODO update link: `next` becomes `main`  -->
 
-- zsh-test-runner ships with [examples of how one might port zunit's and bats's idioms to zsh-test-runner](https://github.com/olets/zsh-test-runner/tree/next/examples). These also serve as an example of multi-file test suites. (The examples do not aim to be fully comprehensive or to have full parity; for full parity, lift the relevant idiomatic assertion's source from the other framework and use it in your tests).
+- zsh-test-runner ships with [examples of how one might port ZUnit's and Bats's idioms to zsh-test-runner](https://github.com/olets/zsh-test-runner/tree/next/examples). These also serve as an example of multi-file test suites. (The examples do not aim to be fully comprehensive or to have full parity with ZUnit or Bats).
