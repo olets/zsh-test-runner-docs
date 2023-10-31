@@ -1,51 +1,57 @@
-# Starlight Starter Kit: Basics
+# zsh-test-runner-docs ![GitHub release (latest by date)](https://img.shields.io/github/v/release/olets/zsh-test-runner-docs)
 
-```
-npm create astro@latest -- --template starlight
-```
+Source for [zsh-test-runner](https://github.com/olets/zsh-test-runner)'s documentation. Read the documentation at <https://zsh-test-runner.olets.dev/>.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+## Requirements
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [asdf](https://asdf-vm.com/) and its Node.js plugin
+- [pnpm](https://pnpm.io/)
 
-## 🚀 Project Structure
+## Development
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+Install dependencies by running
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+```shell
+pnpm
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Run the site in dev mode by running
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+```shell
+pnpm dev
+```
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## Contributing
 
-## 🧞 Commands
+> Looking to contribute to zsh-test-runner itself, not the documentation? Go to https://github.com/olets/zsh-test-runner
 
-All commands are run from the root of the project, from a terminal:
+Thanks for your interest. Contributions are welcome!
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+> Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-## 👀 Want to learn more?
+Check the [Issues](https://github.com/olets/zsh-test-runner-docs/issues) to see if your topic has been discussed before or if it is being worked on.
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+
+## License
+
+<a href="https://www.github.com/olets/zsh-test-runner-docs">zsh-test-runner-docs</a> by <a href="https://www.github.com/olets">Henry Bley-Vroman</a> is licensed under a license which is the unmodified text of <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> and the unmodified text of a <a href="https://firstdonoharm.dev/build?modules=eco,extr,media,mil,sv,usta">Hippocratic License 3</a>. It is not affiliated with Creative Commons or the Organization for Ethical Source.
+
+Human-readable summary of (and not a substitute for) the [LICENSE](LICENSE) file:
+
+You are free to
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms
+
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- Non-commercial — You may not use the material for commercial purposes.
+- Ethics - You must abide by the ethical standards specified in the Hippocratic License 3 with Ecocide, Extractive Industries, US Tariff Act, Mass Surveillance, Military Activities, and Media modules.
+- Preserve terms — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+- No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+## Acknowledgments
+
+- Human-readable license summary is modified from https://creativecommons.org/licenses/by-nc-sa/4.0. The ethics point was added.
