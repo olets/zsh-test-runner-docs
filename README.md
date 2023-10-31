@@ -1,4 +1,4 @@
-# zsh-test-runner-docs ![GitHub release (latest by date)](https://img.shields.io/github/v/release/olets/zsh-test-runner-docs)
+# zsh-test-runner-docs ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/olets/zsh-test-runner-docs)
 
 Source for [zsh-test-runner](https://github.com/olets/zsh-test-runner)'s documentation. Read the documentation at <https://zsh-test-runner.olets.dev/>.
 
