@@ -5,12 +5,6 @@ head:
     content: "Running tests :: zsh-test-runner"
 ---
 
-:::caution
-These are the docs for the unreleased `next` version of zsh-test-runner.
-
-For the latest release's documentation see https://zsh-test-runner.olets.dev.
-:::
-
 The three essential zsh-test-runner commands are [`ztr test`](/reference/commands/#test), [`ztr summary`](/reference/commands/#summary), and [`ztr clear-summary`](/reference/commands/#clear-summary).
 
 `ztr test` runs a test. `ztr summary` prints statistics about the `ztr test` tests run since the last `ztr clear-summary`.

@@ -5,12 +5,6 @@ head:
     content: "Test suites :: zsh-test-runner"
 ---
 
-:::caution
-These are the docs for the unreleased `next` version of zsh-test-runner.
-
-For the latest release's documentation see https://zsh-test-runner.olets.dev.
-:::
-
 You can run a test suite from a file. The following examples suppose the file is in the current working directory; adjust the path to fit your situation.
 
 Either source your test suite or run it in a subshell.

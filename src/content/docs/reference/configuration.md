@@ -6,12 +6,6 @@ head:
     content: "Configuration :: zsh-test-runner"
 ---
 
-:::caution
-These are the docs for the unreleased `next` version of zsh-test-runner.
-
-For the latest release's documentation see https://zsh-test-runner.olets.dev.
-:::
-
 Variable | Type | Default | Use
 ---|---|---|---
 `NO_COLOR` | any | undeclared | To suppress color output, set to any value or simply declare (`NO_COLOR=`), for example in `.zshrc`. Recommended when [logging coverage reports to a file](/usage/logging).

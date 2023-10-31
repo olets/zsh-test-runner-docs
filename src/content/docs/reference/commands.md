@@ -5,12 +5,6 @@ head:
     content: "Commands :: zsh-test-runner"
 ---
 
-:::caution
-These are the docs for the unreleased `next` version of zsh-test-runner.
-
-For the current release's documentation see <https://zsh-test-runner.olets.dev>.
-:::
-
 ## `clear-queue`
 
 ```shell

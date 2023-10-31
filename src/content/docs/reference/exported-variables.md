@@ -6,12 +6,6 @@ head:
     content: "Exported Variables :: zsh-test-runner"
 ---
 
-:::caution
-These are the docs for the unreleased `next` version of zsh-test-runner.
-
-For the latest release's documentation see https://zsh-test-runner.olets.dev.
-:::
-
 Variable | Type | Default | Use
 ---|---|---|---
 `ZTR_PATH` | string | Path to zsh-test-runner | Useful for passing to subshells. See [Logging results to a file](/usage/logging)
