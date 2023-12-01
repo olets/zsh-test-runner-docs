@@ -169,6 +169,10 @@ export default defineConfig({
           label: 'License',
           link: 'https://github.com/olets/zsh-test-runner/blob/main/LICENSE',
         },
+        {
+          label: 'olets.dev',
+          link: 'https://olets.dev',
+        },
       ],
     }),
   ],
