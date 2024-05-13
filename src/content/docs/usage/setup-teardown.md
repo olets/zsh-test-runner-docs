@@ -58,7 +58,7 @@ PASS (( 1 == 1 ))
 You can pass arguments to the setup function by defining `ZTR_TEARDOWN_ARGS`.
 
 ```shell
-% ZTR_SETUP_FN() {
+% ZTR_TEARDOWN_FN() {
   # argv is ZTR_TEARDOWN_ARGS
   echo setting up $2
 }
