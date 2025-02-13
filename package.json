@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "packageManager": "pnpm@8.6.1",
   "dependencies": {
     "@astrojs/starlight": "^0.9.1",
     "astro": "^3.0.6",
