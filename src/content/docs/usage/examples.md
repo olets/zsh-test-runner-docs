@@ -9,7 +9,9 @@ If you use zsh-test-runner in an open-source project, consider contributing a li
 
 ## Software
 
-- [`zsh-abbr`](https://github.com/olets/zsh-abbr) uses zsh-test-runner. Check out [its test suite](https://github.com/olets/zsh-abbr/tree/main/tests) for a real world example of one way of writing zsh-test-runner test suites.
+- [`command-execution-timer`](https://command-execution-timer.olets.dev)'s [tests](https://github.com/olets/command-execution-timer/tree/main/tests) illustrate one way of using the queue.
+
+- [`zsh-abbr`](https://zsh-abbr.olets.dev)'s [tests](https://github.com/olets/zsh-abbr/tree/main/tests) illustrate one way of splitting a suite into multiple files.
 
 ## Demos
 
