@@ -81,6 +81,13 @@ export default defineConfig({
         {
           tag: "script",
           attrs: {
+            src: "/scripts/analytics.js",
+            defer: true,
+          },
+        },
+        {
+          tag: "script",
+          attrs: {
             src: "/scripts/link-headings.js",
             defer: true,
           },
