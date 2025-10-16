@@ -1,102 +1,101 @@
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
-      customCss: [
-        './src/styles/custom.css',
-      ],
+      customCss: ["./src/styles/custom.css"],
       head: [
         {
-          tag: 'link',
+          tag: "link",
           attrs: {
-            rel: "apple-touch-icon" ,
-            sizes: "180x180" ,
-            href: "/apple-touch-icon.png"
+            rel: "apple-touch-icon",
+            sizes: "180x180",
+            href: "/apple-touch-icon.png",
           },
         },
         {
-          tag: 'link',
+          tag: "link",
           attrs: {
-            rel: "icon" ,
-            type: "image/png" ,
-            sizes: "32x32" ,
-            href: "/favicon-32x32.png"
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: "/favicon-32x32.png",
           },
         },
         {
-          tag: 'link',
+          tag: "link",
           attrs: {
-            rel: "icon" ,
-            type: "image/png" ,
-            sizes: "16x16" ,
-            href: "/favicon-16x16.png"
+            rel: "icon",
+            type: "image/png",
+            sizes: "16x16",
+            href: "/favicon-16x16.png",
           },
         },
         {
-          tag: 'link',
+          tag: "link",
           attrs: {
-            rel: "manifest" ,
-            href: "/site.webmanifest"
+            rel: "manifest",
+            href: "/site.webmanifest",
           },
         },
         {
-          tag: 'link',
+          tag: "link",
           attrs: {
-            rel: "mask-icon" ,
-            href: "/safari-pinned-tab.svg" ,
-            color: "#5bbad5"
+            rel: "mask-icon",
+            href: "/safari-pinned-tab.svg",
+            color: "#5bbad5",
           },
         },
         {
-          tag: 'meta',
+          tag: "meta",
           attrs: {
             name: "msapplication-TileColor",
             content: "#ffffff",
           },
         },
         {
-          tag: 'meta',
+          tag: "meta",
           attrs: {
             name: "theme-color",
             content: "#ffffff",
           },
         },
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            src: 'https://cdn.usefathom.com/script.js',
-            'data-site': 'JJDJCMHG',
-            'defer': true,
+            src: "https://cdn.usefathom.com/script.js",
+            "data-site": "JJDJCMHG",
+            defer: true,
           },
         },
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            src: '/scripts/analytics.js',
-            'defer': true,
+            src: "https://loose-saluki.pikapod.net/script.js",
+            "data-website-id": "80be4e68-65c9-42b3-b0d5-0743dfd78f98",
+            defer: true,
           },
         },
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            src: '/scripts/link-headings.js',
-            'defer': true,
+            src: "/scripts/link-headings.js",
+            defer: true,
           },
         },
         {
-          tag: 'script',
+          tag: "script",
           attrs: {
-            src: '/scripts/highlight-codeblock-lines.js',
-            'defer': true,
+            src: "/scripts/highlight-codeblock-lines.js",
+            defer: true,
           },
         },
       ],
-      title: 'zsh-test-runner',
+      title: "zsh-test-runner",
       social: {
-        github: 'https://github.com/olets/zsh-test-runner',
+        github: "https://github.com/olets/zsh-test-runner",
       },
       tableOfContents: {
         minHeadingLevel: 2,
@@ -104,74 +103,74 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'Introduction',
-          link: '/',
+          label: "Introduction",
+          link: "/",
         },
         {
-          label: 'Installation',
-          link: '/installation',
+          label: "Installation",
+          link: "/installation",
         },
         {
-          label: 'Usage',
+          label: "Usage",
           items: [
             {
-              label: 'Individual Tests',
-              link: '/usage/tests',
+              label: "Individual Tests",
+              link: "/usage/tests",
             },
             {
-              label: 'Queue',
-              link: '/usage/queue',
+              label: "Queue",
+              link: "/usage/queue",
             },
             {
-              label: 'Test Suites',
-              link: '/usage/test-suites',
+              label: "Test Suites",
+              link: "/usage/test-suites",
             },
             {
-              label: 'Setup & Teardown',
-              link: '/usage/setup-teardown',
+              label: "Setup & Teardown",
+              link: "/usage/setup-teardown",
             },
             {
-              label: 'Logging results to a file',
-              link: '/usage/logging',
+              label: "Logging results to a file",
+              link: "/usage/logging",
             },
             {
-              label: 'Examples',
-              link: '/usage/examples',
+              label: "Examples",
+              link: "/usage/examples",
             },
           ],
         },
         {
-          label: 'Reference',
+          label: "Reference",
           items: [
             {
-              label: 'Commands',
-              link: '/reference/commands',
+              label: "Commands",
+              link: "/reference/commands",
             },
             {
-              label: 'Configuration',
-              link: '/reference/configuration',
+              label: "Configuration",
+              link: "/reference/configuration",
             },
             {
-              label: 'Exported Variables',
-              link: '/reference/exported-variables',
+              label: "Exported Variables",
+              link: "/reference/exported-variables",
             },
           ],
         },
         {
-          label: 'Contributing',
-          link: 'https://github.com/olets/zsh-test-runner/blob/main/CONTRIBUTING.md',
+          label: "Contributing",
+          link: "https://github.com/olets/zsh-test-runner/blob/main/CONTRIBUTING.md",
         },
         {
-          label: 'Changelog',
-          link: 'https://github.com/olets/zsh-test-runner/blob/main/CHANGELOG.md',
+          label: "Changelog",
+          link: "https://github.com/olets/zsh-test-runner/blob/main/CHANGELOG.md",
         },
         {
-          label: 'License',
-          link: 'https://github.com/olets/zsh-test-runner/blob/main/LICENSE',
+          label: "License",
+          link: "https://github.com/olets/zsh-test-runner/blob/main/LICENSE",
         },
         {
-          label: 'olets.dev',
-          link: 'https://olets.dev',
+          label: "olets.dev",
+          link: "https://olets.dev",
         },
       ],
     }),
